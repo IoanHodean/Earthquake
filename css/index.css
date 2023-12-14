@@ -1,0 +1,286 @@
+header{
+  height: 50pt;
+  background-color: #0f4162;
+  align-items: center;
+  justify-content: center;
+  margin-right:inherit;
+      
+}
+
+.logoAndTextAndLoginButton{
+display: flex;
+flex-direction: row;
+height: 50pt;
+width: 95%;
+align-items: center;
+justify-content: flex-start;
+margin-left: 15pt;
+/* background-color: red; */
+padding-top: 4pt;
+justify-content: space-between;
+}
+
+
+.logoAndText{
+  display: flex;
+  align-items: center;
+}
+
+
+.sign-in{
+  padding-right: 10px;
+  color: white;
+  box-shadow: 0px 0px 1px 1px  white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.sign-in:hover{
+  background-color: white; 
+  color: #0f4162;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+body{
+    background-color: #ffffff;
+    
+}
+#logo{
+width: 100pt;
+height:30pt;
+object-fit:fill;
+}
+
+
+#menu{
+    object-position: right;
+}
+#title{
+   
+  color:#0f4162;
+  margin-top: 50pt;
+  text-align: center;
+  font-size:50pt;
+
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #666;
+    position: relative;
+    top: 15;
+    margin-left: -10pt;
+    width: 103%;
+  }
+  
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+ #intro{
+    color:#0f4162;
+    text-align: center;
+    resize: both;
+    
+
+ }
+
+ 
+#allow-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+  margin-left: 100pt;
+  color: #fff;
+  background: linear-gradient(180deg, #0f4162 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#allow-button:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+#allowers{
+text-align: center;
+font-size:x-large;
+}
+#allow-button{       
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+.form-popup {
+  display: none;
+  position: relative;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 100px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.popup {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #FFF;
+  border: 3px solid #F04A49;
+  z-index: 20;
+}
+
+#popup:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -2;
+}
+
+#popup:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+}
+
+/* Styling buttons & webpage */
+
+body {
+  background: offwhite;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+button {
+    margin-top: 50px;
+    background-color: rgba(255,255,255,0.3);
+    border: 3px solid #0f4162;
+    color: #0f4162;
+    font-size: 25px;
+    padding: 10px 20px;
+    
+}
+
+button:hover {
+    background-color: #0f4162;
+    color: #FFF;
+    border: 3px solid #0f4162;
+    transition: all 0.3s ease 0s;
+}
+
+p {
+	margin: 1em 0;
+  font-size: 16px;
+}
+
+
+.popupk {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #FFF;
+  border: 3px solid #F04A49;
+  z-index: 20;
+}
+
+#quakes{
+  margin-top:3%;
+  text-align: center ;
+  line-height:2.0;
+  
+}
+footer {
+  background-color: #0f4162;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+    position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+ }

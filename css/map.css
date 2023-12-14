@@ -1,0 +1,158 @@
+header{
+  height: 50pt;
+  background-color: #0f4162;
+  align-items: center;
+  justify-content: center;
+    
+}
+
+.logoAndTextAndLoginButton{
+display: flex;
+flex-direction: row;
+height: 50pt;
+width: 95%;
+align-items: center;
+justify-content: flex-start;
+margin-left: 15pt;
+/* background-color: red; */
+padding-top: 4pt;
+justify-content: space-between;
+}
+
+
+.logoAndText{
+  display: flex;
+  align-items: center;
+}
+
+
+.sign-in{
+  padding-right: 10px;
+  color: white;
+  box-shadow: 0px 0px 1px 1px  white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.sign-in:hover{
+  background-color: white; 
+  color: #0f4162;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+body{
+    background-color: #ffffff;
+    
+}
+#logo{
+width: 100pt;
+height:30pt;
+object-fit:fill;
+}
+ 
+#menu{
+    object-position: right;
+}
+#title{
+   
+    color:#0f4162;
+    margin-top: 50pt;
+    text-align: center;
+    font-size:50pt;
+  
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #666;
+    position: relative;
+    top: 15;
+    margin-left: -10pt;
+    width: 110%;
+  }
+  
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+ #intro{
+    color:#4CAF50;
+    text-align: center;
+    margin-top:110pt;
+    
+
+ }
+#sign-in{
+    margin-left:1250pt;
+    font-style:normal;
+    max-width:auto;
+}
+
+#map {
+  max-height: fit-content;
+  height: 1000px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+#popup{
+  width:190px;
+  height: 120px;
+  position: absolute;
+  background-color:white;
+  border-radius: 20px; 
+  z-index: 10;
+  display: none;
+  flex-direction: column;
+  
+  overflow: auto;
+  }
+  
+  #dialog-header{
+  width:20px;
+  height: 20px;
+  align-self: flex-end;
+  margin-left:-2%;
+  user-select: none;
+  }
+  #dialog-header:hover{
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  }
+  #dialog-body{
+    text-align: center;
+    line-height: 3px;
+  }
+  footer {
+    background-color: #0f4162;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+      position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;    
+  }

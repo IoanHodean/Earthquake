@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>John's Earthquake Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">     
+</head>
+    <header style="margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;">
+
+    
+        <div class="logoAndTextAndLoginButton">
+            <div class="logoAndText">
+                <img src="/images/logo.jpg" id="logo">    
+            <p><i>an earthquake informative company</i> </p>
+            </div>
+            
+           </div>
+
+</header>
+
+<body>  
+    <div>
+<nav id="nav">
+    <ul>
+        <li><a href="/index.html">Home</a></li>               
+        <li><a href="/map.html">Earthquake Map</a></li>
+        <li><a href="/Frequently Asked Questions.html">Earthquake FAQ</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        
+    </ul>
+    </nav>
+</div>
+<div id="title">John's Earthquake Analyzer</div>
+<div id="intro">
+This website helps you aknowledge and visualise the earthquakes that are in your area based on your location. 
+<p>Here you will learn more about earthquakes, by choosing from a list of frequent answered questions.</p>
+</div>
+<div id="allowers">Firstly, we need your accept to access your location.<p><input type="button" onclick="getData(),show('popup')" value="Allow access" id="allow-button"></p></div>
+
+<div class="popup" id="popup">
+    <p></p>
+  Good! Now let-s get to business.
+    <button class="open-button" onclick="openForm(), hide('popup')">Open Form</button>    
+  </div>
+
+<div class="form-popup" id="myForm">
+    <form class="form-container"></form>
+    <p></p><label for="radius">Enter the maxim radius in km.</label>    
+<input type="number"
+       placeholder="Type here..."
+       id="radius"  value="1000"                         > 
+                                  
+<p><details id="magnitudes"><summary><label for="minmag">Do you want to include the magnitudes filter?</label></summary></p>
+Please choose an minimum value for  magnitude.
+<input type="range" value="0" step="any" min="0.0" max="10.0" id="minmag" oninput="this.nextElementSibling.value = parseFloat(this.value).toFixed(1)">
+<output >0</output>ML</details>
+<p><details id="depth"><summary><label for="maxDepth">Do you want to sort also by depth?</label></p></summary> 
+<p>Please choose an maximum value for depth.
+<input type="range" value="1000" step="any" min="100" max="1000" id="maxDepth" oninput="this.nextElementSibling.value = parseFloat(this.value).toFixed(1)">
+<output >1000</output> km</p></details>
+<details id="time"><summary><label for="first">Do you want a specific time period?</label></summary>
+From <input type="date" id="first" data-date="" data-date-format="DD MMMM YYYY" value="2023-07-09">> until <input type="date" id="second-date" data-date="" data-date-format="DD MMMM YYYY" value="2023-08-10">>
+</details>
+<input type="submit" id="submit-button" value="Submit" onclick="succes()" accesskey="Enter">
+    </form>
+</div>
+ <div id="quakes">  
+ </div>   
+ <div id="toMap"></div>
+
+ <footer>
+    <p>&copy; 2023 Quak-Quak. All rights reserved.</p>
+</footer>
+</body>
+</html>

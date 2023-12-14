@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="module" src="js/map.js"></script>    
+    <title>John's Earthquake Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="css/map.css">     
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+</head>
+<header style="margin-top: -20px;
+margin-left: -20px;
+margin-right: -20px;">
+
+
+    <div class="logoAndTextAndLoginButton">
+        <div class="logoAndText">
+            <img src="/images/logo.jpg" id="logo">    
+        <p><i>an earthquake informative company</i> </p>
+        </div>
+        
+        <p class="sign-in"> Sign in</p>
+    </div>
+
+</header>
+<body>  
+
+    <div>
+<nav id="nav">
+    <ul>
+        <li><a href="/index.html">Home</a></li>               
+        <li><a href="/map.html">Earthquake Map</a></li>
+        <li><a href="/Frequently Asked Questions.html">Earthquake FAQ</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    </nav>
+    
+</div>
+<div id="title">Earthquake Map</div>
+<div id="popup">
+    <div id="dialog-header" onclick="closePopup()"> x</div>
+    <div id="dialog-body"></div></div>
+<div id="map"></div>
+
+ <!-- prettier-ignore -->
+ <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+    ({key: "AIzaSyBIn0f2kehIVi00AehLO96K39Mnq34jYEw", v: "beta"});</script>
+
+<footer>
+    <p>&copy; 2023 Quak-Quak. All rights reserved.</p>
+</footer>   
+</body>
+</html>
